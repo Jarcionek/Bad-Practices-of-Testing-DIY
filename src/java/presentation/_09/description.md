@@ -1,3 +1,3 @@
 ### Domain:
 
-The system polls events from the queue and calls ```EventsReceiver``` with a bulk of events. ```EventsReceiver``` attaches some metadata to the events, logs the events etc. before passing them one by one to ```EventsProcessor```. Bulks of events are guaranteed to be smaller than 1000 and it is required that each event in the same bulk has a unique identifier that allows to distinguish it from others in the bulk (```EventProcessor``` will be then called with event and string uuid parameters). Bulks can be identified by other metadata attached to the event, which is not relevant and hence not shown in the code.
+`JsonLoggingExceptionMapper` is a class that converts exception thrown anywhere in the code into HTTP response to be returned by the server. In our case it also logs the exceptions - each with different id.
