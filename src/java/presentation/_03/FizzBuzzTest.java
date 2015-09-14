@@ -1,9 +1,9 @@
-package presentation._04;
+package presentation._03;
 
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import static presentation._04.FizzBuzz.fizzBuzz;
+import static presentation._03.FizzBuzz.fizzBuzz;
 
 public class FizzBuzzTest {
 
